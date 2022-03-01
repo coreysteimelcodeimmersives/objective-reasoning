@@ -2,6 +2,35 @@
 // │ Your code here! │	
 // └─────────────────┘
 
+function isAdmin(usr){
+    return usr.userRole === 'ADMIN'
+    ?  true
+    : false;
+}
+
+// Write a function, getEmail, that given a user object, return the users' Code Immersives email. We'll assume that a Code Immersives email is always in firstName.lastName@codeimmersives.com form.
+
+// Examples
+
+// getEmail({
+//     firstName: 'Brian'
+//     lastName: 'Carela'
+// })
+// => 'brian.carela@codeimmersives.com'
+
+// getEmail({
+//     firstName: 'Anthony',
+//     lastName: 'DeRosa'
+// })
+// => 'anthony.derosa@codeimmersives.com'
+
+function getEmail(usr){
+    return `${usr.firstName.toLowerCase()}.${usr.lastName.toLowerCase()}@codeimmersives.com`
+}
+
+
+
+
 
 
 // ┌─────────────────────────────────────┐
