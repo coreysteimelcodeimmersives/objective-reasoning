@@ -8,24 +8,12 @@ function isAdmin(usr){
     : false;
 }
 
-// Write a function, getEmail, that given a user object, return the users' Code Immersives email. We'll assume that a Code Immersives email is always in firstName.lastName@codeimmersives.com form.
-
-// Examples
-
-// getEmail({
-//     firstName: 'Brian'
-//     lastName: 'Carela'
-// })
-// => 'brian.carela@codeimmersives.com'
-
-// getEmail({
-//     firstName: 'Anthony',
-//     lastName: 'DeRosa'
-// })
-// => 'anthony.derosa@codeimmersives.com'
-
 function getEmail(usr){
     return `${usr.firstName.toLowerCase()}.${usr.lastName.toLowerCase()}@codeimmersives.com`
+}
+
+function getPlaylistLength(obj){
+    return obj.songs.length;
 }
 
 
